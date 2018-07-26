@@ -1,4 +1,204 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Courier;
+}
+
+
+
+/* Style the header */
+header {
+    font-family: Courier;
+    /*background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+    font-family: Courier;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+
+.column {
+
+    width: 100%;
+    padding: 2px;
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.row {
+   position: relative;
+   float: left;
+   width:  100px;
+   height: 100px;
+   background-position: 50% 50%;
+   background-repeat:   no-repeat;
+   background-size:     cover;
+ }
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+
+<p><img src= "logo.png" style="width:130px;height:60px;"><strong>a blog within a blog.</strong> </p>
+<p><strong> <a href="BWB.html" style="color:black">home</a> <a href="creators.html" style="color:black">creators</a> <a href="#" style="color:black">about us</a> <a href="#" style="color:black">account</a></strong> </p>
+
+
+
+</body>
+
+
+<header>
+  <br></br>
+  <img src="gunlady.png" style="float:left;width:450px;height:400px;">
+  <br></br>
+  <br></br>
+  <h2 style= "text-align:center;"> grandma with a gun</h2>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <p>fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+  ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+ <p style= "float:center" > </p>
+<p><a href="#"><font color="black">read more</a></p>
+</header>
+
+<section>
+  <nav>
+    <ul>
+    <br></br>
+
+
+    </ul>
+  </nav>
+
+  <article>
+    <p><img src="dress.png" style="float:right;width:470px;height:400px;">
+
+      <br></br>
+    <h2 style= "text-align:center;"> lost dreams</h2>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+   <p style= "float:center" > </p>
+  <p><a href="#"><font color="black">read more</a></p>
+    <br></br>
+    <br></br>
+</section>
+
+<footer>
+ <br></br>
+ <br></br>
+  <p><img src="contact.png" style=width:100%;height:100%;"</p>
+<!-- </footer>
+
+<!-- </body>
+=======
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -11,9 +211,9 @@
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
-      </ul></h1></div>
+      </ul></h1></div> -->
 
-      <style>
+      <!-- <style>
         h1 {
           font-family: Courier;
           font-size: 25px;
@@ -41,6 +241,8 @@
       </style>
     </header>
   </head>
-  <body>
-  </body>
+</body>
+
+
+
 </html>
