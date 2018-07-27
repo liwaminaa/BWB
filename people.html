@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+
+}
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: Courier;
+}
+
+
+
+/* Style the header */
+header {
+    font-family: Courier;
+    /*background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+    font-family: Courier;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+
+<p><img src= "logo.png" style="width:130px;height:60px;"><strong>a blog within a blog.</strong> </p>
+<p><strong> <a href="BWB.html">home</a> <a href="creators.html">creators</a> <a href="#">about us</a> <a href="#">account</a></strong> </p>
+
+
+<header>
+  <br></br>
+  <!-- <p> Jerry Howard <style="float:right;width:470px;height:400px;">
+  <img src="jerry.png" style="width:180px;height:180px;">   <img src="MARLYN.png" style="float:CENTER;width:180px;height:180px;">
+  <p style= "text-align:center;"> Maryln Jacobs</p> -->
+  <h2 style= "text-align:center;">Creators</h2>
+  <div class="clearfix">
+    <div class="img-container">
+      <img src="creator.png"  style="width:450px;height:400px;">
+      <p> Shambavi Dhall</p>
+      <p></p>
+      <p><a href="#"><font color="black">read more</a></p>
+    </div>
+    <div class="img-container">
+      <img src="mary.png" style="width:450px;height:400px;">
+      <p> Marilyn Johnson</p>
+      <p><a href="#"><font color="black">read more</a></p>
+    </div>
+    <div class="img-container">
+      <img src="jerry.png" style="width:450px;height:400px;">
+      <p>       Jerry Howard </p>
+      <p><a href="#"><font color="black">read more</a></p>
+    </div>
+  </div>
+<!-- <div class="clearfix">
+  <div class="img-container">
+    <img src="creator.png"  style="width:300px;height:270px;">
+    <br></br>
+    <p> Shambavi Dhall </p>
+    <p><strong><a href="#">read more</a></strong></p>
+  </div>
+  <div class="img-container">
+    <img src="marY2.png" style="width:330px;height:300px;">
+    <p>      Marilyn Jacobs</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    <p><strong><a href="#">read more</a></strong></p>
+  </div>
+  <div class="img-container">
+    <img src="jerry2.png" style="width:320px;height:280x;">
+    <p>       Jerry Howard</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p><strong><a href="#">read more</a></strong></p> -->
+  </div>
+</div>
+
+
+</header>
+
+<section>
+  <nav>
+    <ul>
+    <br></br>
+    <br></br>
+    <br></br>
+    </ul>
+  </nav>
+
+  <article>
+    <div class="clearfix">
+      <div class="img-container">
+        <img src="teresa.png"  style="width:450px;height:400px;">
+        <p> Teresa Miller </p>
+        <p><a href="#"><font color="black">read more</a></p>
+      </div>
+      <div class="img-container">
+        <img src="jeremiah.png" style="width:450px;height:400px;">
+        <p> Jeremiah Turner</p>
+       <p><a href="#"><font color="black">read more</a></p>
+      </div>
+      <div class="img-container">
+        <img src="jackie.png" style="width:450px;height:400px;">
+        <p>       Jackie Doorsi </p>
+        <p><a href="#"><font color="black">read more</a></p>
+      </div>
+    </div>
+</section>
+
+<footer>
+      <img src="contact.png" style="width:100%;height:100%;">
+</footer>
+
+</body>
+</html>
