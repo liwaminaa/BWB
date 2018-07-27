@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Template</title>
+
+<header>
+  <div><img src="logo.png" alt="BWB Logo" width="170" height="100"/>
+  <h1>a blog within a blog.</h1>
+  <h1><ul>
+    <li><a class="active" href="BWB.html">Home<br><br></a></li>
+    <li><a href="creators.html">Creators</a></li>
+    <li><a href="aboutme.html">About Us</a></li>
+    <li><a href="account.html">Account</a></li>
+  </ul></h1></div>
+  <h2 style= "text-align:center;">Creators</h2>
+  <div class="clearfix">
+    <div class="img-container">
+      <img src="creator.png"  style="width:450px;height:400px;">
+      <p> Shambavi Dhall</p>
+      <p></p>
+      <p><a href="profile.html"><font color="black">read more</a></p>
+    </div>
+    <div class="img-container">
+      <img src="mary.png" style="width:450px;height:400px;">
+      <p> Marilyn Johnson</p>
+      <p><a href="#"><font color="black">read more</a></p>
+    </div>
+    <div class="img-container">
+      <img src="jerry.png" style="width:450px;height:400px;">
+      <p>       Jerry Howard </p>
+      <p><a href="#"><font color="black">read more</a></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
 <style>
+h1 {
+  font-family: Courier;
+  font-size: 25px;
+  margin-left: 170px;
+  margin-top: -60px;
+}
+ul {
+    list-style-type: none;
+    margin-top:60px;
+    margin-left: -40px;
+    overflow: hidden;
+    font-family: Courier;
+    font-size: 20px;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 40px;
+  /*  text-decoration: underline;*/
+}
 * {
     box-sizing: border-box;
 
@@ -84,60 +141,14 @@ footer {
     }
 }
 </style>
-</head>
-<body>
-
-<p><img src= "logo.png" style="width:130px;height:60px;"><strong>a blog within a blog.</strong> </p>
-<p><strong> <a href="BWB.html">home</a> <a href="creators.html">creators</a> <a href="#">about us</a> <a href="#">account</a></strong> </p>
-
-
-<header>
-  <br></br>
-  <!-- <p> Jerry Howard <style="float:right;width:470px;height:400px;">
-  <img src="jerry.png" style="width:180px;height:180px;">   <img src="MARLYN.png" style="float:CENTER;width:180px;height:180px;">
-  <p style= "text-align:center;"> Maryln Jacobs</p> -->
-  <h2 style= "text-align:center;">Creators</h2>
-  <div class="clearfix">
-    <div class="img-container">
-      <img src="creator.png"  style="width:450px;height:400px;">
-      <p> Shambavi Dhall</p>
-      <p></p>
-      <p><a href="#"><font color="black">read more</a></p>
-    </div>
-    <div class="img-container">
-      <img src="mary.png" style="width:450px;height:400px;">
-      <p> Marilyn Johnson</p>
-      <p><a href="#"><font color="black">read more</a></p>
-    </div>
-    <div class="img-container">
-      <img src="jerry.png" style="width:450px;height:400px;">
-      <p>       Jerry Howard </p>
-      <p><a href="#"><font color="black">read more</a></p>
-    </div>
-  </div>
-<!-- <div class="clearfix">
-  <div class="img-container">
-    <img src="creator.png"  style="width:300px;height:270px;">
-    <br></br>
-    <p> Shambavi Dhall </p>
-    <p><strong><a href="#">read more</a></strong></p>
-  </div>
-  <div class="img-container">
-    <img src="marY2.png" style="width:330px;height:300px;">
-    <p>      Marilyn Jacobs</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-    <p><strong><a href="#">read more</a></strong></p>
-  </div>
-  <div class="img-container">
-    <img src="jerry2.png" style="width:320px;height:280x;">
-    <p>       Jerry Howard</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      <p><strong><a href="#">read more</a></strong></p> -->
-  </div>
-</div>
 
 
 </header>
+
+</head>
+<body>
+
+
 
 <section>
   <nav>
