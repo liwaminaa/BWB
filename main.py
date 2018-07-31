@@ -15,6 +15,26 @@ class MainHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('BWB.html')
         self.response.out.write(template.render())
 
+class AboutMeHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('aboutme.html')
+        self.response.out.write(template.render())
+
+class AccountMeHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('account.html')
+        self.response.out.write(template.render())
+
+class CreatorsMeHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('creators.html')
+        self.response.out.write(template.render())
+
+
+
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/aboutme', AboutMeHandler),
+    ('/account', AccountMeHandler),
+    ('/creators',CreatorsMeHandler)
 ], debug=True)

@@ -74,11 +74,6 @@
 
 
 
-
-
-
-
-
   <h2 class="w3-center"></h2>
 
   <div class="w3-content w3-display-container">
@@ -86,28 +81,28 @@
 
     <div class= "yas">
     <div class="sham">
-    <img class="mySlides" src="images/s.png" width="300" height="300"/>
+    <img class="mySlides" src="../extras/s.png" width="300" height="300"/>
     <div class="card"><p></p></div>
   </div>
 </div>
 
   <div class= "yas">
   <div class="sham">
-    <img class="mySlides" src="Teresa.jpg" width="500" height="300"/>
+    <img class="mySlides" src="../extras/Teresa.jpg" width="500" height="300"/>
     <!-- <div class="card">  <p> ddd</p></div> -->
   </div>
 </div>
 
   <div class= "yas">
   <div class= "sham">
-    <img class="mySlides" src="Jermaiah.jpg" width="500" height="300"/>
+    <img class="mySlides" src="../extras/Jermaiah.jpg" width="500" height="300"/>
       <!-- <div class="card"><p>dsd </p></div> -->
   </div>
 </div>
 
   <div class= "yas">
   <div class="sham">
-    <img class="mySlides" src="Jackie.jpg" width="500" height="300"/>
+    <img class="mySlides" src="../extras/Jackie.jpg" width="500" height="300"/>
         <!-- <div class="card"><p> dqd</p></div> -->
   </div>
 </div>
@@ -121,42 +116,42 @@
 
 
   <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
+      var slideIndex = 1;
+      showDivs(slideIndex);
 
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
 
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-  }
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
 
 
-  var slideIndex2 = 1;
-  showDivs1(slideIndex2);
+      var slideIndex2 = 1;
+      showDivs1(slideIndex2);
 
-  function plusDivs1(n2) {
-    showDivs1(slideIndex2 += n2);
-  }
+      function plusDivs1(n2) {
+        showDivs1(slideIndex2 += n2);
+      }
 
-  function showDivs1(n2) {
-    var i2;
-    var x2 = document.getElementsByClassName("yas");
-    if (n2 > x.length) {slideIndex2 = 1}
-    if (n2 < 1) {slideIndex2 = x2.length}
-    for (i2 = 0; i2 < x2.length; i2++) {
-       x2[i].style.display = "none";
-    }
-    x2[slideIndex2-1].style.display = "block";
-  }
+      function showDivs1(n2) {
+        var i2;
+        var x2 = document.getElementsByClassName("yas");
+        if (n2 > x.length) {slideIndex2 = 1}
+        if (n2 < 1) {slideIndex2 = x2.length}
+        for (i2 = 0; i2 < x2.length; i2++) {
+           x2[i].style.display = "none";
+        }
+        x2[slideIndex2-1].style.display = "block";
+      }
   </script>
 
 
