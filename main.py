@@ -30,6 +30,11 @@ class CreatorsMeHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('creators.html')
         self.response.out.write(template.render())
 
+class OtherpeopleHandler(webapp2.RequestHandler):
+            def get(self):
+                template = jinja_environment.get_template('people.html')
+                self.response.out.write(template.render())
+
 
 class NewTemplateHandler(webapp2.RequestHandler):
     def post(self):
@@ -42,6 +47,11 @@ app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/aboutme', AboutMeHandler),
     ('/account', AccountMeHandler),
+<<<<<<< HEAD
     ('/creators', CreatorsMeHandler),
     ('/new', NewTemplateHandler)
+=======
+    ('/creators',CreatorsMeHandler),
+    ('/people',OtherpeopleHandler)
+>>>>>>> b4ed0b776e5b015c633822e23d141843886915c7
 ], debug=True)
