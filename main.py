@@ -47,11 +47,9 @@ app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/aboutme', AboutMeHandler),
     ('/account', AccountMeHandler),
-<<<<<<< HEAD
     ('/creators', CreatorsMeHandler),
-    ('/new', NewTemplateHandler)
-=======
+    ('/new', NewTemplateHandler),
     ('/creators',CreatorsMeHandler),
     ('/people',OtherpeopleHandler)
->>>>>>> b4ed0b776e5b015c633822e23d141843886915c7
+
 ], debug=True)
