@@ -31,10 +31,17 @@ class CreatorsMeHandler(webapp2.RequestHandler):
         self.response.out.write(template.render())
 
 
+class NewTemplateHandler(webapp2.RequestHandler):
+    def post(self):
+        data = self.request.get('userInput')
+        template = jinja_environment.get_template('new.html')
+        self.response.out.write(template.render(data=data))
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/aboutme', AboutMeHandler),
     ('/account', AccountMeHandler),
-    ('/creators',CreatorsMeHandler)
+    ('/creators', CreatorsMeHandler),
+    ('/new', NewTemplateHandler)
 ], debug=True)
