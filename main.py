@@ -22,7 +22,7 @@ class AboutMeHandler(webapp2.RequestHandler):
 
 class AccountMeHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('account.html')
+        template = jinja_environment.get_template('accounts.html')
         self.response.out.write(template.render())
 
 class CreatorsMeHandler(webapp2.RequestHandler):
@@ -31,27 +31,25 @@ class CreatorsMeHandler(webapp2.RequestHandler):
         self.response.out.write(template.render())
 
 class OtherpeopleHandler(webapp2.RequestHandler):
-            def get(self):
-                template = jinja_environment.get_template('people.html')
-                self.response.out.write(template.render())
+    def get(self):
+        template = jinja_environment.get_template('people.html')
+        self.response.out.write(template.render())
 
 
 class NewTemplateHandler(webapp2.RequestHandler):
     def post(self):
-        data = self.request.get('userInput')
+        data = self.request.get('title')
+        data1 = self.request.get('body')
+        data2 = self.request.get('2ndbody')
         template = jinja_environment.get_template('new.html')
-        self.response.out.write(template.render(data=data))
+        self.response.out.write(template.render(data=data, data1=data1, data2= data2))
 
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/aboutme', AboutMeHandler),
     ('/account', AccountMeHandler),
-<<<<<<< HEAD
     ('/creators', CreatorsMeHandler),
-    ('/new', NewTemplateHandler)
-=======
-    ('/creators',CreatorsMeHandler),
+    ('/new', NewTemplateHandler),
     ('/people',OtherpeopleHandler)
->>>>>>> b4ed0b776e5b015c633822e23d141843886915c7
 ], debug=True)

@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <p><img src= "../extras/logo.png" style="width:150px;height:80px;"><strong>a blog within a blog.</strong> </p>
+    <p><strong><a href="/">home</a> <a href="/creators">creators</a> <a href="/aboutme">about us</a> <a href="/account">account</a></strong></p>
+
     <meta charset="utf-8">
     <title></title>
+    <style>
+
+      .title {
+        display:inline-block;
+        border: solid 1px #000;
+        min-height: 20px;
+        max-height: 100px;
+        min-width: 300px;
+        max-width: 100px;
+        /* margin-left: -400px; */
+        font-size: 20px;
+        text-align: justify;
+        font-style: courier;
+      }
+
+      .image{
+        display:inline-block;
+        border: solid 1px #000;
+        min-height: 300px;
+        max-height: 100px;
+        min-width: 600px;
+        max-width: 100px;
+        margin-top: 30px;
+        text-align: justify;
+      }
+
+      .text {
+        display:inline-block;
+        border: solid 1px #000;
+        min-height: 500px;
+        max-height: 100px;
+        min-width: 700px;
+        max-width: 100px;
+        margin-top: 40px;
+        text-align: justify;
+        font-style: courier;
+
+      }
+
+    </style>
   </head>
   <body>
-    {{ data }}
+    <center><div class="title" style= "font-style: courier;"contentEditable="true" >{{ data }}</div></center>
+    <center><div class="image" contentEditable="true" >{{ data1 }}</div></center>
+    <center><div class="text" contentEditable="true" >{{ data2 }}</div></center>
+
+
+
   </body>
 </html>
