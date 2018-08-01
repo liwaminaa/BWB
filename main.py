@@ -15,6 +15,41 @@ class MainHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('BWB.html')
         self.response.out.write(template.render())
 
+class AboutMeHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('aboutme.html')
+        self.response.out.write(template.render())
+
+class AccountMeHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('account.html')
+        self.response.out.write(template.render())
+
+class CreatorsMeHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('creators.html')
+        self.response.out.write(template.render())
+
+class OtherpeopleHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('people.html')
+        self.response.out.write(template.render())
+
+
+class NewTemplateHandler(webapp2.RequestHandler):
+    def post(self):
+        data = self.request.get('userInput')
+        template = jinja_environment.get_template('new.html')
+        self.response.out.write(template.render(data=data))
+
+
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/aboutme', AboutMeHandler),
+    ('/account', AccountMeHandler),
+    ('/creators', CreatorsMeHandler),
+    ('/new', NewTemplateHandler),
+    ('/creators',CreatorsMeHandler),
+    ('/people', OtherpeopleHandler)
+
 ], debug=True)
