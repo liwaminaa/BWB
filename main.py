@@ -51,5 +51,7 @@ app = webapp2.WSGIApplication([
     ('/account', AccountMeHandler),
     ('/creators', CreatorsMeHandler),
     ('/new', NewTemplateHandler),
-    ('/people',OtherpeopleHandler)
+    ('/creators',CreatorsMeHandler),
+    ('/people', OtherpeopleHandler)
+
 ], debug=True)
