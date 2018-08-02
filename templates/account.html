@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <header>
+    <div><img src="../extras/logo.png" alt="BWB Logo" width="170" height="100">
+    <h1><strong>a blog within a blog.</strong></h1>
+    <h1><ul>
+      <li><strong><a class="active" href="#home">Home<br><br></a></strong></li>
+      <li><strong><a href="#news">Contact</a></strong></li>
+      <li><strong><a href="#contact">About Us</a></strong></li>
+      <li><strong><a href="#about">Account</a></strong></li>
+    </ul></h1></div>
+  </header>
+</head>
+<body>
+<style>
+h1 {
+  font-family: Courier;
+  font-size: 25px;
+  margin-left: 170px;
+  margin-top: -60px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top:60px;
+    margin-left: -40px;
+    overflow: hidden;
+    font-family: Courier;
+    font-size: 20px;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 40px;
+}
+.photo1{
+width: 190px;
+height: 190px;
+position: absolute;
+bottom: 5px;
+right: 0;
+}
+</style>
+
+<h2><font face="courier"><center>Submit your Writing!</center></h2>
+
+<form action="/new?data=userInput" method="post">
+  <font face="courier">First name:<br> <img src="../extras/template.png" alt="title" style="float:right;">
+  <input type="text" name="userInput" value="">
+  <br><br>
+
+  <font face="courier">Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+
+  <font face="courier">Article Title:<br>
+  <input type="text" name="articlename" value="">
+  <br><br>
+  <font face="courier">Textbox One:<br>
+  <input type="text" name="articlename" value="">
+  <br><br>
+  <font face="courier">Textbox Two:<br>
+  <input type="text" name="articlename" value="">
+  <br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+
+<p>If you click the "Submit" button, the form-data will create your article!</p>
+
+</body>
+</html>
