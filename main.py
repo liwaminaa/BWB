@@ -22,7 +22,7 @@ class AboutMeHandler(webapp2.RequestHandler):
 
 class AccountMeHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('account.html')
+        template = jinja_environment.get_template('accounts.html')
         self.response.out.write(template.render())
 
 class CreatorsMeHandler(webapp2.RequestHandler):
@@ -38,9 +38,11 @@ class OtherpeopleHandler(webapp2.RequestHandler):
 
 class NewTemplateHandler(webapp2.RequestHandler):
     def post(self):
-        data = self.request.get('userInput')
+        data = self.request.get('title')
+        data1 = self.request.get('body')
+        data2 = self.request.get('2ndbody')
         template = jinja_environment.get_template('new.html')
-        self.response.out.write(template.render(data=data))
+        self.response.out.write(template.render(data=data, data1=data1, data2= data2))
 
 
 app = webapp2.WSGIApplication([
